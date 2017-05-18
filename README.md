@@ -1,6 +1,6 @@
 # Advitiy-Files-Me
 
->My Advitiy Files
+My Advitiy Files
 
->Random Work Files are uploaded here and then sorted accordingly.
+Random Work Files are uploaded here and then sorted accordingly.
 
