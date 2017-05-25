@@ -1,0 +1,15 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.2}
+\contentsline {section}{\numberline {1.1}Constellation and Formation Flying: Description}{3}{section.3}
+\contentsline {section}{\numberline {1.2}Why Multi-Satellite?}{3}{section.4}
+\contentsline {chapter}{\numberline {2}Research Report}{4}{chapter.5}
+\contentsline {section}{\numberline {2.1}Satellite Formation Flying Missions}{4}{section.6}
+\contentsline {section}{\numberline {2.2}In-Depth Study of Various Satellites Mentioned}{5}{section.7}
+\contentsline {subsection}{\numberline {2.2.1}AeroCube Series}{5}{subsection.8}
+\contentsline {subsection}{\numberline {2.2.2}Prometheus}{5}{subsection.9}
+\contentsline {subsection}{\numberline {2.2.3}Flock-1}{6}{subsection.10}
+\contentsline {subsection}{\numberline {2.2.4}CanX-4, 5}{6}{subsection.11}
+\contentsline {section}{\numberline {2.3}General CubeSat Formation Flying}{7}{section.12}
+\contentsline {section}{\numberline {2.4}Distributed Optimization Algorithm for FF}{7}{section.13}
+\contentsline {section}{\numberline {2.5}Staged Deployment of Constellations}{7}{section.14}
+\contentsline {section}{\numberline {2.6}Cost and Risk Analysis}{7}{section.15}
+\contentsline {section}{\numberline {2.7}Constellation Mission Design using Model-based Systems}{7}{section.16}

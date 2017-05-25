@@ -1,0 +1,292 @@
+\documentclass[12pt, a4paper, oneside]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{amsmath,amsfonts,amssymb,amscd,amsthm,xspace}
+\usepackage{titlesec}
+\usepackage{vmargin}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{listings}
+\usepackage{changepage}
+\usepackage{lipsum}
+%\usepackage[centerlast,small,sc]{caption}
+\usepackage[justification=centering]{caption}%for center aligning the image captions
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Standard reference style with [3], [4] type numbers in the text and entries sorted according to order of appearance in the References
+\usepackage[pdfpagemode={UseOutlines},bookmarks=true,bookmarksopen=true,bookmarksopenlevel=0,bookmarksnumbered=true,hypertexnames=false,colorlinks,linkcolor={black},citecolor={black},urlcolor={black},pdfstartview={FitV},unicode,breaklinks=true]{hyperref}
+\hypersetup{urlcolor=black, colorlinks=true} % colors hyperlinks in blue - change to black if annoying
+\usepackage{float}
+\DeclareMathOperator*{\argmin}{argmin}
+%\OnehalfSpacing
+\newenvironment{section-points}{\begin{adjustwidth}{2cm}{2cm}}{\end{adjustwidth}}
+\newenvironment{main-points}{\begin{adjustwidth}{1cm}{1cm}}{\end{adjustwidth}}
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\centering}
+  {\chaptertitlename\ \thechapter}{18pt}{\Huge}
+	\titlespacing{\chapter}{0pt}{-50pt}{10pt}%To reduce spacing on top of chapter titles
+
+\setmarginsrb   { 2.5cm}  % left margin
+                { 2.5cm}  % top margin
+                { 2.0cm}  % right margin
+                { 2.2cm}  % bottom margin
+                { 0cm}  % head height
+                { 1.2cm}  % head sep
+                { 0.3pt}  % foot height
+                { 1.0cm}  % foot sep
+
+\begin{document}
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%   TITLEPAGE
+%
+%   due to variety of titlepage schemes it is probably better to make titlepage manually
+%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+\thispagestyle{empty}
+
+{%%%
+\sffamily
+\centering
+\Large
+
+~\vspace{\fill}
+
+{\huge 
+\bfseries{Constellation Study}
+}
+
+\vspace{2cm}
+
+{\LARGE
+\bfseries{Advitiy\\ \bigskip IIT-B Student Satellite Project}
+}
+
+\vspace{2cm}
+
+By \\ \bigskip \bfseries{Rajarshi Saha\\ \bigskip Payload Subsystem}
+
+\vspace{1.5cm}
+
+\vspace{2.5cm}
+
+
+%%%
+}%%%
+
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\tableofcontents
+\clearpage
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%---%%%
+
+\chapter{Introduction}
+
+On the Day of writing this Document, the Payload Team was finalizing the Payloads to be presented to ISRO for Deployment. I was tasked with Constellation and Researching its' applications.
+
+\section{Constellation and Formation Flying: Description}
+
+Before we begin with specifics, a Proper Distinction is to be made between the two terms.
+
+\vspace{0.3cm}
+
+Constellations and Formation Flying(FF) differ in the fact that in a FF Multi-Satellite Mission, the states of all satellites are governed by a common Control Law. For example, Global Positioning System(GPS), a very Popular Multi-Satellite Mission is in fact a Constellation since each satellite is Independent of the other, even  though All satellites contribute to the same cause.
+
+\section{Why Multi-Satellite?}
+
+The main reason Multi-Satellite Missions are gaining Popularity among Student Satellites is because a Multitude of Small Satellites can accomplish what a Single large Satellite can. This is important because pf the following advantages a Multi-CubeSat arrangement has over a single Satellite arrangement:
+\vspace{-0.5cm}
+\begin{section-points}
+	\item[$\ast$] Simpler Designs
+	\item[$\ast$] Faster Build Times
+	\item[$\ast$] Cheaper Replacements leading to Higher Redundancy
+	\item[$\ast$] Ability to view targets from Multiple Angles at Multiple Times
+\end{section-points}
+
+\chapter{Research Report}
+\vspace{0.5cm}
+\begin{main-points}
+	\item[$\Rightarrow$] Studied initially provided Document* written by Saptarishi which listed many examples of Formation Flying being used/demonstrated/proposed in Student Satellites. Studied up on all Satellites in brief%(Summary can be checked up in Doc Provided).
+	\item[$\Rightarrow$] Researched more into DICE*, AeroCube-4 and its' Successors*, Prometheus*, Flock series* and CanX 4,5 as these might be more relevant to our case. 
+	\item[$\Rightarrow$] Studied a paper on How a General CubeSat FF Setup can be established, i.e. all things to consider before establishing a FF Setup, irrespective of objective.%(Explain maybe?)
+	\item[$\Rightarrow$] Tried studying on the Controls' aspect of FF from this document*.
+	\item[$\Rightarrow$] Downloaded Cost Models for setting up Multi-Satellite Systems*, if needed later.
+	\item[$\Rightarrow$] Also Beginning to study the possibility of Staged Deployment of Constellations (Specifically, Communication Constellations). 
+	%(* -> add reference)
+\end{main-points}
+
+\section{Satellite Formation Flying Missions}
+\vspace{0cm}
+
+Insert link of Saptarishi's Paper*
+
+\vspace{0.5cm}
+
+Above document briefly covers all Formation Flying Missions carried out by various institutes Worldwide. This document clearly categorizes all missions as Earth Science, Planetary Science, Astrophysics, Heliophysics or a Technical Demonstration. It also categorises according to Number of Satellites in FF and Funding Provided to project.
+
+\vspace{0.5cm}
+
+This is a good starting point for looking up various applications of FF which have been/ might be used. Note that these only have a small description of the same, so going through it won't be a massive pain.
+
+\clearpage
+
+\section{In-Depth Study of Various Satellites Mentioned}
+
+\vspace{0cm}
+
+As mentioned in the points above, the following satellites have been properly studied and selected due to their relevance to our Project.
+
+\vspace{-0.5cm}
+
+\begin{section-points}
+	\item[$\ast$] AeroCube-4 and its' Successors(6, 7, 8, 9)
+	\item[$\ast$] Prometheus
+	\item[$\ast$] Flock-I
+	\item[$\ast$] CanX-4, 5
+\end{section-points}
+
+\subsection{AeroCube Series}
+
+\vspace{0cm}
+
+Insert Link here*
+
+\vspace{0.3cm}
+
+All AeroCube missions are Technical Demonstrations of FF. The above document has a brief overview of all the offerings of these CubeSats. Light Read only, won't take much time.
+
+\subsection{Prometheus}
+
+\vspace{0cm}
+
+Insert Link Here*
+
+\vspace{0.3cm}
+
+This program is the Direct Successor of the Perseus Program*, which aimed to:
+
+\vspace{-0.5cm}
+
+\begin{section-points}
+	\item[$\ast$] Demonstrate the ability to build and launch a useful satellite quickly and at very low cost.
+	\item[$\ast$] Demonstrate a satellite system simple enough to be operated and maintained by non-space experts with little training.
+	\item[$\ast$] Demonstrate a tactically relevant communications capability to a CubeSat with an extremely modest ground station footprint.
+	\item[$\ast$] Validate the Agile Space management and development methodology.
+\end{section-points}
+
+\vspace{0.3cm}
+
+Building on the Success of the Perseus Program, Prometheus had two Independent Stages: Block 1 and Block 2, with Block 1 having 8 nano-satellites in FF whereas Block 2 had 2 nanoSats. The major successes of Block 1 are listed:
+
+\vspace{-0.5cm}
+
+\begin{section-points}
+	\item[$\ast$] Regular, Secure communications achieved between All 8 satellites and Maintained for many Months.
+	\item[$\ast$] Autonomous system anomaly resolution.
+	\item[$\ast$] Regular automated and easy to use code upload and reprogramming of all microprocessors and SDR (Software Defined Radio) FPGAs.
+	\item[$\ast$] Automated file transfer from ground station to satellite and satellite to ground station.
+	\item[$\ast$] Manually variable data rates.
+	\item[$\ast$] Fully encrypted communications.
+\end{section-points}
+
+\vspace{0.3cm}
+
+Check link for more details regarding the same.
+
+\subsection{Flock-1}
+
+\vspace{0cm}
+
+Insert Link Here*
+
+\vspace{0.3cm}
+
+Flock-1 consists of 28 nanoSats in a Constellation arrangement, all dedicated to Earth-Imaging. Payload-wise, this example may be quite useful as we are already considering using a Telescope as a Payload.
+
+\vspace{0.3cm}
+
+The recent launch of 88 Extra NanoSats by PSLV (on Feb 15th 2017, Extensively covered on Media) contributed to this pre-existing Constellation and allows for Daily Images of the Entire Earth! Above link has a more comprehensive coverage of this Constellation.
+
+\subsection{CanX-4, 5}
+
+\vspace{0cm}
+
+Insert Link Here*
+
+\vspace{0.3cm}
+
+CanX-4, 5 is a Dual-NanoSat FF Demonstration mission. This demonstration aimed at showing that FF can be achieved with sub-meter tracking accuracy with low (delta)V values.
+
+\vspace{0.3cm}
+
+This Constellation setup can help us with the Controls aspect of our Payload if we wish to employ a Very Accurate Formation. The downside is that this system will require a dedicated Propulsion System which for the moment seems difficult to include in our Payload. Above link has more details about how this was implemented.
+
+\clearpage
+
+\section{General CubeSat Formation Flying}
+
+\vspace{0cm}
+
+Insert Link Here*
+
+\vspace{0.3cm}
+
+Above link contains a document which covers all the aspects one needs to think about before deciding on the components of a Formation Flying Set of CubeSats.
+
+\vspace{0cm}
+
+The above document also covers the Types of Formation Flying systems in brief and mentions a few options for Inter-satellite Communication
+
+\section{Distributed Optimization Algorithm for FF}
+
+\vspace{0cm}
+
+Insert Link Here*
+
+\vspace{0.3cm}
+
+Seeing that the Major aspect of FF lies in Controls, I decided to search how is the Controls behind FF structured.
+
+\section{Staged Deployment of Constellations}
+
+\vspace{0cm}
+
+Insert link Here*
+
+\vspace{0.3cm}
+
+A document Highly relevant to our Satellite and also implemented by many nanoSats mentioned earlier(eg. Flock-1). 
+
+\section{Cost and Risk Analysis}
+
+\vspace{0cm}
+
+Insert link Here*
+
+\vspace{0.3cm}
+
+As we are currently in Ideation stage, this document is Unnecessary. But, I believe this might come in handy for a System Engineer/Project Head while finalizing the Payload.
+
+
+\section{Constellation Mission Design using Model-based Systems}
+
+\vspace{0cm}
+
+Insert link Here*
+
+\vspace{0.3cm}
+
+This document talks of the use of a tool to build a Constellation Design based on input parameters and cost metrics. Haven't studied in detail.
+
+\end{document}
